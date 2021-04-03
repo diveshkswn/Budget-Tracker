@@ -1,3 +1,9 @@
+# React Budget Tracker App
+
+## Learnig below React concepts :  
+### learn how break down a UI into React components
+### Learn how to work with state using the Context API
+### Learn about actions, reducers, and the dispatch function
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

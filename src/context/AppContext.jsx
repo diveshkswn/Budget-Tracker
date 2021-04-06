@@ -7,7 +7,14 @@
 import React, { createContext, useReducer } from 'react';
 
 function AppReducer(state, action) {
+  // console.log(action.payload);
   switch (action.type) {
+    case 'ADD_EXPENSE':
+      return {
+        ...state, // state contains current values ex : {budget : 5000 , expenses : []}
+        expenses: [...state.expenses, action.payload], // This line will override the expense value
+        // for key expense with adding appending all existing values in it. using spread operator
+      };
     default: return state;
   }
 }

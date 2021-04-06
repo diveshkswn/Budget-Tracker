@@ -1,13 +1,10 @@
 /* eslint-disable linebreak-style */
-import React from 'react';
+import React, { useContext } from 'react';
 import ExpenseItem from './ExpenseItem';
+import { AppContext } from '../context/AppContext';
 
 function ExpenseList() {
-  const expenses = [
-    { id: 567, name: 'Shopping', cost: 20 },
-    { id: 568, name: 'Holiday', cost: 100 },
-    { id: 569, name: 'Party', cost: 50 },
-  ];
+  const { expenses } = useContext(AppContext);
 
   function populateExpenses(expense) {
     return (

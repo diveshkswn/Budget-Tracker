@@ -18,6 +18,7 @@ const initialState = {
     { id: 11, name: 'shopping', cost: 10 },
     { id: 12, name: 'grocery', cost: 35 },
     { id: 13, name: 'partyyyy', cost: 20 },
+    { id: 16, name: 'Vacation', cost: 50 },
 
   ],
 

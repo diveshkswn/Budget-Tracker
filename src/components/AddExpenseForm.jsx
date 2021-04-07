@@ -1,4 +1,8 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable linebreak-style */
+/* eslint-disable react/prop-types */
+/* eslint-disable linebreak-style */
 /* eslint-disable jsx-a11y/control-has-associated-label */
 /* eslint-disable linebreak-style */
 /* eslint-disable jsx-a11y/label-has-associated-control */
@@ -32,6 +36,7 @@ function AddExpenseForm() {
 
   return (
     <form onSubmit={handleSubmit}>
+
       <div className="row">
         <div className="col-sm">
           <label htmlFor="name">Name</label>

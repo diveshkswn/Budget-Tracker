@@ -15,8 +15,10 @@ function Remaining() {
 
   const remaining = parseInt(budget, 10) - parseInt(totalExpenses, 10);
 
+  const alertType = totalExpenses > budget ? 'danger' : 'primary';
+
   return (
-    <div className="alert alert-success">
+    <div className={`alert alert-${alertType}`}>
       <span>
         Remaining : $
         {remaining}

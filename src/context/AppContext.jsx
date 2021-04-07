@@ -15,6 +15,13 @@ function AppReducer(state, action) {
         expenses: [...state.expenses, action.payload], // This line will override the expense value
         // for key expense with adding appending all existing values in it. using spread operator
       };
+    case 'DELETE_EXPENSE':
+      return {
+        ...state,
+        expenses: state.expenses.filter((expense) => expense.id !== action.payload),
+      };
+
+    case 'EDIT_BUDGET': return { ...state, budget: action.payload };
     default: return state;
   }
 }
@@ -25,7 +32,7 @@ const initialState = {
     { id: 11, name: 'shopping', cost: 10 },
     { id: 12, name: 'grocery', cost: 35 },
     { id: 13, name: 'partyyyy', cost: 20 },
-    { id: 16, name: 'Vacation', cost: 50 },
+    { id: 13, name: 'Vacation', cost: 50 },
 
   ],
 

@@ -36,7 +36,11 @@ function App() {
             <AddExpenseForm />
           </div>
         </div>
-
+        <h4 className="m-3 text-center">
+          Developed by
+          {' '}
+          <a href="https://diveshkswn.github.io/portfolio_/">Divesh Keswani</a>
+        </h4>
       </div>
 
     </AppProvider>

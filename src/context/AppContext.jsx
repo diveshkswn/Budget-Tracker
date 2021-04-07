@@ -22,6 +22,7 @@ function AppReducer(state, action) {
       };
 
     case 'EDIT_BUDGET': return { ...state, budget: action.payload };
+
     default: return state;
   }
 }
@@ -32,7 +33,9 @@ const initialState = {
     { id: 11, name: 'shopping', cost: 10 },
     { id: 12, name: 'grocery', cost: 35 },
     { id: 13, name: 'partyyyy', cost: 20 },
-    { id: 13, name: 'Vacation', cost: 50 },
+    { id: 14, name: 'Vacation', cost: 50 },
+    { id: 15, name: 'Above values are defualt values from AppReducer initial state. ', cost: 50 },
+    { id: 16, name: 'You can remove them by clicking the cross button in right ->', cost: 50 },
 
   ],
 

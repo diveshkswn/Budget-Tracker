@@ -1,10 +1,15 @@
 # React Budget Tracker App
 
-## Learnig below React concepts :  
-### learn how break down a UI into React components
-### Learn how to work with state using the Context API
-### Learn about actions, reducers, and the dispatch function
-# Getting Started with Create React App
+## Used below React concepts :  
+1. Break down UI into React components
+2. Work with state using the Context API
+3. actions, reducers, and the dispatch function
+
+### Bootstap 5 used for styling UI
+### Website deployed on Netlify  : https://expense-tracker-1996.netlify.app/index.html
+ 
+ 
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

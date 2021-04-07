@@ -15,7 +15,7 @@ function EditBudget(props) {
   function updateBudget() {
     const newObject = {
       type: 'EDIT_BUDGET',
-      payload: budget,
+      payload: budgetstate,
     };
     dispatch(newObject);
     props.setEditBudgetForm(true);

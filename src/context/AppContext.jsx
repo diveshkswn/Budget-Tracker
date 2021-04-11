@@ -4,7 +4,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable linebreak-style */
 
-import React, { createContext, useReducer } from 'react';
+import React, { createContext, useEffect, useReducer } from 'react';
 
 function AppReducer(state, action) {
   // console.log(action.payload);
@@ -44,7 +44,18 @@ const initialState = {
 const AppContext = createContext();
 
 function AppProvider(props) {
-  const [state, dispatch] = useReducer(AppReducer, initialState);
+  const storageLocal = JSON.parse(localStorage.getItem('local-storage-state'));
+  // eslint-disable-next-line max-len
+  const [state, dispatch] = useReducer(AppReducer, storageLocal === null ? initialState : storageLocal);
+
+  function addToLocalStorage() {
+    localStorage.setItem('local-storage-state', JSON.stringify(state));
+  }
+
+  useEffect(() => {
+    addToLocalStorage(state);
+  }, [state]); // whenever there is a change in state then useEffect will execute
+
   return (
     <AppContext.Provider
       value={{

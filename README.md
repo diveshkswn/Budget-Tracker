@@ -6,7 +6,7 @@
 3. actions, reducers, and the dispatch function
 
 ### Bootstap 5 used for styling UI
-### Website deployed on Netlify  : https://expense-tracker-1996.netlify.app/index.html
+### Website deployed on Netlify  : https://expense-tracker-1996.netlify.app
  
  
 ## Getting Started with Create React App
